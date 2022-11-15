@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghulam_Rasool_Assignment16</title>
+</head>
+
+<body>
+    <script>
+        console.log("Exercise 1")
+        let categories = ["Health", "Fashion", "Toys", "Electronic", "TV", "Sports", "Watches", "Motorbikes", "Home and Lifestyle", "Devices"]
+        let categories_firsthalf = categories.slice(0,5)
+        console.log(categories_firsthalf)
+        // let categories_firsthalf2 = categories.splice(0,5)
+        // console.log(categories_firsthalf2)
+
+        console.log("Exercise 2")
+        const str1 = ["Apple", "Bananna", "Orange", "Grapes"]
+        const str2 = ["abc" , "def", "ghi", "jkl"]
+        const str3 = str1.slice(1).concat(str2.slice(1))
+        console.log(str3)
+
+        console.log("Exercise 3")
+        const NumericArray = ['80', '9', '700', 40, 1, 5, 200];
+    //    Array sorted in Ascending Order
+        const ascending = NumericArray.sort((a,b) => a-b);
+        console.log(ascending);
+         //    Array sorted in Descending Order
+const descending = NumericArray.sort((a,b) => b-a);
+console.log(descending)
+        console.log("Exercise 4")
+        const months = ["Jan", "March", "April", "Dec"];
+        // add "Feb" at the index 1.
+        // months[1]= "Feb"
+
+       months.splice(1,0,"Feb");
+        console.log(months);
+
+        // Now remove "Dec" from the array and add "May", "June" in the replacement of "Dec"
+        months.splice(4,1,"May", "June");
+        console.log(months);
+        console.log("Exercise 5")
+        let joinarr = ["Me", "my family"]
+       let jion1=  joinarr.join(" and ")
+        console.log(jion1)
+
+
+        console.log("Exercise 6")
+let n = prompt("Enter a number as you Wish");
+if (n > 2 && n < 11){
+    console.log("Number is between 2 and 10");
+}
+else if (n > 10 && n < 20){
+    console.log("Number is between 10 and 19");
+}
+else if (n > 19 && n < 30){
+    console.log("Number is between 19 and 29");
+}
+else{
+   
+    console.log("Sorry try again");
+}
+
+
+    </script>
+</body>
+
+</html>
