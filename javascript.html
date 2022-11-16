@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 16</title>
+    <style>
+        body{
+            background-color:darkgrey
+        }
+h1{
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(105, 22, 213);
+}
+code{
+    color: rgb(11, 90, 92);
+    font-size: 18px;
+}
+p, li{
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+    </style>
+</head>
+<body>
+    <h1>JavaScript Assignment</h1>
+   <h4> Exercise 1:</h4> 
+   <p>Write a JavaScript program to extract the first half of a given array and show the output in new    variable "categories_firsthalf" <br>
+    let categories = ["Health", "Fashion", "Toys", "Electronic", "TV", "Sports", "Watches", "Motorbike", "Home and Lifestyle", "Devices"]
+   </p>
+   <h5>Answer:
+   </h5>
+   <pre><code>    let categories = ["Health", "Fashion", "Toys", "Electronic", "TV", "Sports", "Watches", "Motorbikes", "Home and Lifestyle", "Devices"];
+    let categories_firsthalf = categories.slice(0,5); 
+    console.log(categories_firsthalf) </code></pre>
+   <h4>Exercise 2:</h4>
+   <p>Write a JavaScript program to concatenate two array except their first index. <br>
+    const str1 = ["Apple", "Bananna", "Orange", "Grapes"] <br>
+    const str2 = ["abc" , "def", "ghi", "jkl"]
+    </p>
+    <h5>Answer:
+    </h5>
+    <pre><code>    const str1 = ["Apple", "Bananna", "Orange", "Grapes"];
+    const str2 = ["abc" , "def", "ghi", "jkl"];
+    const str3 = str1.slice(1).concat(str2.slice(1));
+    console.log(str3);</code></pre>
+    <h4>Exercise 3:</h4>
+    <p>Write a JavaScript program to sort the given array in ascending and descending order. <br>
+        const NumericArray = ['80', '9', '700', 40, 1, 5, 200];
+        </p>
+        <h5>Answer:
+        </h5>
+        <pre><code>     const NumericArray = ['80', '9', '700', 40, 1, 5, 200];
+    //    Array sorted in Ascending Order. 
+    const ascending = NumericArray.sort((a,b) => a-b);
+    console.log(ascending);
+    
+    //    Array sorted in Descending Order
+    const descending = NumericArray.sort((a,b) => b-a); 
+    console.log(descending)</code></pre>
+    <h4>Exercise 4:</h4>
+    <p>Write a JavaScript program to add "Feb" at the index 1. <br>
+        const months = ["Jan", "March", "April", "Dec"]; <br>
+        Now remove "Dec" from the array and add "May", "June" in the replacement of "Dec"
+        </p>
+        <h5>Answer:
+        </h5>
+        <pre><code>    const months = ["Jan", "March", "April", "Dec"];
+    // add "Feb" at the index 1.
+    // months[1]= "Feb" 
+    
+    months.splice(1,0,"Feb"); 
+    console.log(months); 
+    
+    // Now remove "Dec" from the array and add "May", "June" in the replacement of "Dec" 
+    months.splice(4,1,"May", "June"); 
+    console.log(months); </code></pre>
+    <h4>Exercise 5:</h4>
+    <p>
+        Write a JavaScript program to join given array with " and ". <br>
+        let joinarr = ["Me", "my family"]
+        </p>
+        <h5>Answer:
+        </h5>
+        <pre>
+    <code>let joinarr = ["Me", "my family"];
+   let jion1=  joinarr.join(" and ");
+
+   console.log(jion1); </code> </pre>
+    <h4>Exercise 6:</h4>
+    <p>Write JS Condition for the following conditions: <br>
+        <ol><li>number greater than 2 and less than 10 then result should be "Number is between 2 and 10"</li>
+        <li> number greater than 10 and less than 19 then reult should be "Number is between 10 and 19"</li>
+        <li>number greater than 19 and less than 30 then reult should be "Number is between 19 and 29"</li>
+        <li>If selection is not in these values then result should be "Sorry try again"</li>
+    </ol>
+    
+       </p>
+       <h5>Answer:
+    </h5>
+    <pre> <code>
+    let n = prompt("Enter a number as you Wish"); 
+        if (n > 2 && n < 11){
+            console.log("Number is between 2 and 10"); 
+        } 
+        else if (n > 10 && n < 20){ 
+            console.log("Number is between 10 and 19"); 
+        } 
+        else if (n > 19 && n < 30){ 
+            console.log("Number is between 19 and 29"); 
+        } 
+        else{ 
+           
+            console.log("Sorry try again"); 
+        }</code> </pre>
+    
+      <a href="./index.html">Back to JavaScript Code...</a> 
+</body>
+</html>
